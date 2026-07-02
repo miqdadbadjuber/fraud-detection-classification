@@ -7,24 +7,24 @@
 ![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-00C853?style=for-the-badge)
 
-A Machine Learning classification project for fraud detection using Decision Tree and Random Forest algorithms with hyperparameter tuning to improve predictive performance.
+A Machine Learning project for fraud detection classification using Decision Tree and Random Forest algorithms with hyperparameter tuning.
 
 ---
 
 ## Overview
 
-This project builds classification models based on the clustering results obtained from the previous stage.
+This project focuses on fraud detection using supervised machine learning algorithms.
 
 The workflow covers the complete machine learning pipeline, including:
 
 - Data preprocessing
 - Train-test split
-- Decision Tree training
-- Random Forest training
-- Hyperparameter tuning
+- Decision Tree model training
+- Random Forest model training
+- Hyperparameter tuning using GridSearchCV
 - Model evaluation
 - Model comparison
-- Model export
+- Export trained models
 
 ---
 
@@ -32,7 +32,7 @@ The workflow covers the complete machine learning pipeline, including:
 
 Source:
 
-**Processed dataset generated from the clustering stage.**
+**Processed dataset generated from the fraud detection pipeline.**
 
 Target Classes:
 
@@ -64,6 +64,7 @@ fraud-detection-classification/
 │   └── tuning_classification.h5
 ├── classification_analysis.ipynb
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
@@ -77,18 +78,18 @@ fraud-detection-classification/
 | Random Forest | **100.00%** |
 | Tuned Random Forest | **100.00%** |
 
-The tuned Random Forest model achieved the best overall performance after hyperparameter optimization using GridSearchCV.
+All three trained models achieved **100% classification accuracy** on the test dataset.
 
 ---
 
 ## Models
 
-The project includes three trained machine learning models:
+The repository contains three trained machine learning models:
 
 | Model | Description |
 |--------|-------------|
 | Decision Tree | Baseline classification model |
-| Random Forest | Ensemble learning model |
+| Random Forest | Ensemble classification model |
 | Tuned Random Forest | Optimized Random Forest using GridSearchCV |
 
 ---
@@ -107,10 +108,10 @@ The project includes three trained machine learning models:
 ## Future Improvements
 
 - Evaluate using cross-validation
-- Experiment with XGBoost and LightGBM
+- Explore XGBoost and LightGBM
 - Improve feature engineering
-- Optimize hyperparameter search
-- Deploy the classification model using FastAPI or Streamlit
+- Perform advanced hyperparameter optimization
+- Deploy the trained model using FastAPI or Streamlit
 
 ---
 
